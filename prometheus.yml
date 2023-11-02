@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 global:
   scrape_interval: 15s  # How frequently Prometheus should scrape metrics
 
@@ -6,3 +7,13 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:8000']  # The target where the FastAPI app is running
     metrics_path: '/metrics'  # The endpoint where FastAPI exposes metrics
+=======
+global:
+  scrape_interval: 15s  # How frequently Prometheus should scrape metrics
+
+scrape_configs:
+  - job_name: 'fastapi'  # A name for the job
+    static_configs:
+      - targets: ['localhost:8000']  # The target where the FastAPI app is running
+    metrics_path: '/metrics'  # The endpoint where FastAPI exposes metrics
+>>>>>>> 6d720e5246a677e2151f7b00e783bcaa107faeb3
